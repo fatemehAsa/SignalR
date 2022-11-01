@@ -1,0 +1,40 @@
+﻿@model Dtos.AspNet.RegisterDto
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<div class="row testbox">
+    <div class="col-md-4">
+        <form method="post">
+            <p>ثبت نام</p>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Email" class="icon">
+                    <i class="icon-envelope"></i>
+                </label>
+                <input asp-for="Email" type="text" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="icon">
+                    <i class="icon-shield"></i>
+                </label>
+                <input asp-for="Password" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="icon">
+                    <i class="icon-shield"></i>
+                </label>
+                <input asp-for="ConfirmPassword" type="password" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div style="display:flex">
+                <button type="submit" class="button">Register</button>
+                <a href="/Account/Login" class="link-login">Login</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

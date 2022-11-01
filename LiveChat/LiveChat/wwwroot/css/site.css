@@ -1,0 +1,433 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+    font-family: 'yekan';
+    src: url("../fonts/yekanweb.eot");
+    src: url("../fonts/yekanweb.eot?#iefix") format("embedded-opentype"), url("../fonts/yekanweb.woff") format("woff"), url("../fonts/yekanweb.ttf") format("truetype"), url("../fonts/yekanweb.svg#web_Yekan") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'numbers';
+    src: url("../fonts/yekannumbers.eot");
+    src: url("../fonts/yekannumbers.eot?#iefix") format("embedded-opentype"), url("../fonts/yekannumbers.woff") format("woff"), url("../fonts/yekannumbers.ttf") format("truetype"), url("../fonts/yekannumbers.svg#web_Yekan") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'iransans-light';
+    src: url('../fonts/iransans-light.woff') format('woff'), url('../font/iransans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iransans-bold';
+    src: url('../fonts/iransans-bold.woff') format('woff'), url('../font/iransans-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Far-DastNevis';
+    src: url('../fonts/Far-DastNevis.eot') format('embedded-opentype'), url('../fonts/Far-DastNevis.woff') format('woff'), url('../fonts/Far-DastNevis.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url("../fonts/yekanweb.eot");
+    src: url("../fonts/yekanweb.eot?#iefix") format("embedded-opentype"), url("../fonts/yekanweb.woff") format("woff"), url("../fonts/yekanweb.ttf") format("truetype"), url("../fonts/yekanweb.svg#web_Yekan") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'numbers';
+    src: url("../fonts/yekannumbers.eot");
+    src: url("../fonts/yekannumbers.eot?#iefix") format("embedded-opentype"), url("../fonts/yekannumbers.woff") format("woff"), url("../fonts/yekannumbers.ttf") format("truetype"), url("../fonts/yekannumbers.svg#web_Yekan") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    display:none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*Custom Css*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+:focus {
+    outline: none;
+}
+
+body,
+input,
+textarea,
+select {
+    font-family: 'yekan', 'numbers';
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+p {
+    font-size: 12px;
+    width: 150px;
+    display: inline-block;
+    margin-left: 18px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #4c4c4c;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+html {
+    background-color: #ffffff;
+}
+
+.testbox {
+    margin: 70px auto;
+    width: 343px;
+    height: 405px;
+    -webkit-border-radius: 8px/7px;
+    -moz-border-radius: 8px/7px;
+    border-radius: 8px/7px;
+    background-color: #ebebeb;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border: solid 1px #cbc9c9;
+}
+
+
+form {
+    margin: 0 30px;
+}
+
+    form > p {
+        text-align: center;
+        font-size: 30px;
+        margin-left: 53px;
+    }
+
+label:after {
+    opacity: 1;
+}
+
+hr {
+    color: #a9a9a9;
+    opacity: 0.3;
+}
+
+.form-group {
+    display: flex;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    height: 40px;
+    -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+    -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
+    border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+    border: solid 1px #cbc9c9;
+    padding-left: 10px;
+}
+
+input[type="password"] {
+    margin-bottom: 25px;
+}
+
+.icon {
+    height: 40px;
+    background-color: #3a57af;
+    padding: 10px;
+    margin-left: 15px;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    -moz-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;
+    color: white;
+    -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+    border: solid 0px #cbc9c9;
+}
+
+.gender {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.accounttype {
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+button.button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 8px 20px 0px;
+    display: inline-block;
+    text-decoration: none;
+    width: 90px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #3a57af;
+    -webkit-box-shadow: 0 3px rgba(58, 87, 175, 0.75);
+    -moz-box-shadow: 0 3px rgba(58, 87, 175, 0.75);
+    box-shadow: 0 3px rgba(58, 87, 175, 0.75);
+    transition: all 0.1s linear 0s;
+    position: relative;
+    background: #3a57af;
+}
+
+    button.button:hover {
+        top: 3px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+#Password-error, #ConfirmPassword-error, #Email-error {
+    position: relative;
+    display: block;
+    width: 200px;
+    top: 34px;
+    text-align: end;
+    direction: rtl;
+    right: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.link-login {
+    color: #686666;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    left: 55px;
+}
+
+    .link-login:hover {
+        color: #686666;
+    }
+
+.user-info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.log-out-container {
+    width: 50px;
+    height: 50px;
+}
+
+    .log-out-container img {
+        max-width: 100%;
+    }
+
+
+/*Style for live chat*/
+.col-12 {
+    margin: 10px;
+}
+
+.other-message, .other-message #messageInput {
+    background: #94C2ED;
+}
+
+    .other-message #messageInput {
+        width: 100%;
+        border: none;
+        color: #fff;
+        position: relative;
+        bottom: 13px;
+        box-shadow: none;
+    }
+
+.col-4 > .triangle {
+    width: 13px;
+    height: 13px;
+    position: relative;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 6.5px;
+    background: #dbdbdb;
+    right: -50px;
+    z-index: 10;
+}
+
+.other-message .triangle {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -23px;
+    background: #94C2ED;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#userInput {
+    overflow: visible;
+    padding: 18px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    width: 90%;
+    position: relative;
+    left: 34px;
+    background: #dbdbdb;
+}
+
+.message {
+    color: white;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    width: 90%;
+    position: relative;
+}
+
+#sendButton {
+    background: #c6e19e;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    right: 280px;
+}
+
+.col-12.hrr {
+    margin-top: 50px;
+}

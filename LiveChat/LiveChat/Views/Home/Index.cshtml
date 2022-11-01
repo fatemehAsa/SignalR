@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    var user = User.Identity.Name;
+    var isAdmin = ViewData["ISAdmin"];
+}
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="text-center user-info-container">
+        <h1 class="alert alert-success">@user </h1>
+        <div class="log-out-container">
+            <a asp-action="SignOut" asp-controller="Account">
+                <img src="~/img/logout-svgrepo-com.svg" />
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        @if ((bool)isAdmin)
+        {
+            <div class="row">
+                <div class="col-12">User</div>
+                <div class="col-4">
+                    <div class="triangle"></div>
+                    <input type="text" id="userInput" />
+                </div>
+            </div>
+        }
+        <div class="row">
+            <div class="col-12">Message</div>
+            <div class="col-4">
+                <div class="message other-message float-right">
+                    <div class="triangle"></div>
+                    <input type="text" id="messageInput" />
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-6">
+                    <input type="button" id="sendButton" value="Send Message" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 hrr">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-danger">
+        User is not authenticated!
+    </div>
+}
+
+
+
+@section Scripts{
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+}
